@@ -138,7 +138,7 @@ function validateDob()
     else 
     {
         document.getElementById("dob_error").innerHTML = "";
-        localStorage.setItem("dob", dob);
+        localStorage.setItem("dob", dob.value);
         return true;
     }
 }
@@ -566,10 +566,15 @@ function checkCookie()
 
 async function loadStates()
 {
-    const select = document.getElementById("state");   
+    const response = await fetch("state");   
     if (response.ok)    
     {
         const states = await response.json();
         document.getElementById("state").innerHTML = "<option value=''>Select a state</option>";
     }
+}
+
+function clearLocalStorage()
+{
+    localStorage.clear();
 }
