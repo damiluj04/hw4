@@ -88,23 +88,9 @@ label
         font-weight: normal;
     }    
 
-input
-    {
-        text-align: left;
-        font-family:'Trebuchet MS', sans-serif;
-        font-weight: normal;
-    }
-
 textarea
     {
         text-align: left;
-        font-family:'Trebuchet MS', sans-serif;
-        font-weight: normal;
-    }
-
-#today
-    {
-        text-align: right;
         font-family:'Trebuchet MS', sans-serif;
         font-weight: normal;
     }
@@ -124,20 +110,6 @@ p
         font-weight: normal;
     }
 
-.password_message
-    {
-        text-align: right;
-        font-family:'Trebuchet MS', sans-serif;
-        font-weight: normal;
-        position: relative;
-        left: 100px;
-        background: transparent;
-        padding: 10px;
-        border-spacing: 2px;
-        border-radius: 20px;
-        color: rgb(16, 168, 38);
-    }
-
 #review
     {
         margin-top: 5px;
@@ -153,26 +125,6 @@ td.output
        border-spacing: 2px;
        border-radius: 20px;
        color: black;
-    }
-
-td.output
-    {
-        width: 500px;
-        background-color: rgba(209, 171, 243, 0.753);
-        padding: 10px;
-        border-spacing: 2px;
-    }
-
-.image
-    {
-        text-align: left;
-    }
-
-.td1
-    {
-        text-align: right;
-        font-family:'Trebuchet MS', sans-serif;
-        font-weight: normal;
     }
 
 th
@@ -180,29 +132,6 @@ th
         text-align: center;
         font-family:'Trebuchet MS', sans-serif;
         font-weight: bold;
-    }
-
-footer
-    {
-        position: flex;
-        bottom: 0;
-        width: 100%;
-        background-color:rgb(166, 111, 218);
-        height: 2.0 rem;
-    }
-
-#footer
-    {
-        text-align: left;
-        font-family:'Trebuchet MS', sans-serif;
-        font-weight: normal;
-    }    
-
-label 
-    {
-        text-align: right;
-        font-family:'Trebuchet MS', sans-serif;
-        font-weight: normal;
     }    
 
 input
@@ -212,31 +141,9 @@ input
         font-weight: normal;
     }
 
-textarea
-    {
-        text-align: left;
-        font-family:'Trebuchet MS', sans-serif;
-        font-weight: normal;
-    }
-
 #today
     {
         text-align: right;
-        font-family:'Trebuchet MS', sans-serif;
-        font-weight: normal;
-    }
-
-p 
-    {
-        text-align: left;
-        font-family:'Trebuchet MS', sans-serif;
-        font-weight: normal;
-    }
-
-.error
-    {
-        color: red;
-        font-size: 12px;
         font-family:'Trebuchet MS', sans-serif;
         font-weight: normal;
     }
@@ -253,23 +160,6 @@ p
         border-spacing: 2px;
         border-radius: 20px;
         color: red;
-    }
-
-#review
-    {
-        margin-top: 5px;
-    }
-
-table.output,
-tr.output,
-td.output
-    {
-       width: 500px;
-       background-color: rgba(209, 171, 243, 0.753); 
-       padding: 10px;
-       border-spacing: 2px;
-       border-radius: 20px;
-       color: black;
     }
 
 td.outputdata
@@ -334,11 +224,11 @@ td.outputdata
 
 .iframe-container
 {
-    position: absolute;
+    position: relative;
     top: 50%;
     right: 0;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     overflow: hidden;
     box-sizing: border-box;
 }
