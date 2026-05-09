@@ -78,15 +78,11 @@ function validateLname()
         return false;
     }
 
-    else if (lname != "")
+    else if (!lname.match(namePattern))
     {
-
-        if (!lname.match(namePattern))
-        {
             document.getElementById("lname_error").innerHTML = "Last name should only contain letters, dashes, and apostrophes";
             return false;
-        }
-    }  
+    } 
 
     else if (lname.length < 1)
     {
