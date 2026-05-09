@@ -570,3 +570,5 @@ function clearLocalStorage()
 {
     localStorage.clear();
 }
+
+/* end of file: hw4.js */
