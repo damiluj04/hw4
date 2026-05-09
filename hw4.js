@@ -19,7 +19,7 @@ function validateFname()
         return false;
     }
 
-    if (!fname.match(namePattern))
+    else if (!fname.match(namePattern))
     {
         document.getElementById("fname_error").innerHTML = "First name should only contain letters, dashes, and apostrophes";
         return false;
