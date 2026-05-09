@@ -19,15 +19,11 @@ function validateFname()
         return false;
     }
 
-    else if (fname != "")
+    if (!fname.match(namePattern))
     {
-
-        if (!fname.match(namePattern))
-        {
-            document.getElementById("fname_error").innerHTML = "First name should only contain letters, dashes, and apostrophes";
-            return false;
-        }
-    }   
+        document.getElementById("fname_error").innerHTML = "First name should only contain letters, dashes, and apostrophes";
+        return false;
+    }
 
     else if (fname.length < 1)
     {
