@@ -57,9 +57,9 @@
 					</tr>
 
 					<tr>
-						<td align = "center">
-							<label for="fname">First name:</label>
-							<input
+						<td colspan="4" align="center">
+						<label for="fname">First name:</label>
+						<input
 							type="text"
 							name="fname"
 							id="fname"
@@ -70,11 +70,13 @@
 							pattern="[a-zA-Z']{1,30}"
 							onblur="validateFname()"
 							placeholder="First Name"
-							/>
+						/>
 						<span class="error" id="fname_error"></span>	
 		
-							<label for="mini">Middle initial:</label>
-							<input
+						&nbsp;&nbsp; 
+						
+						<label for="mini">Middle initial:</label>
+						<input
 							type="text"
 							name="mini"
 							id="mini"
@@ -84,11 +86,13 @@
 							pattern="[a-zA-Z']{0,1}"
 							onblur="validateMini()"
 							placeholder="Middle Initial"
-							/>
+						/>
 						<span class="error" id="mini_error"></span>
 
-							<label for="lname">Last name:</label>
-							<input
+						&nbsp;&nbsp;
+
+						<label for="lname">Last name:</label>
+						<input
 							type="text"
 							name="lname"
 							id="lname"
@@ -99,7 +103,7 @@
 							pattern="[a-zA-Z']{1,30}"
 							onblur="validateLname()"
 							placeholder="Last Name"
-							/>
+						/>
 						<span class="error" id="lname_error"></span>
 						</td>
 					</tr>
