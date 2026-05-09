@@ -261,6 +261,8 @@ function validateUname()
     uname = document.getElementById("uname").value;
     uname = uname.toLowerCase();
     document.getElementById("uname").value = uname;
+
+    let regex = /^[a-zA-Z0-9_]+$/;
     
     if (uname.length == 0)
     {
@@ -268,14 +270,13 @@ function validateUname()
         return false;
     }
     
-    if (!isNaN(uname.charAt(0)))
+    else if (!isNaN(uname.charAt(0)))
     {
         document.getElementById("uname_error").innerHTML = "Username cannot start with a number";
         return false;
     }
 
-    let regex = /^[a-zA-Z0-9_]+$/;
-    if (!regex.test(uname))
+    else if (!regex.test(uname))
     {
         document.getElementById("uname_error").innerHTML = "Username can only contain letters, numbers, and underscores";
         return false;
@@ -299,7 +300,6 @@ function validateUname()
         localStorage.setItem("uname", uname);
         return true;
     }
-    
 }
 
 function validatePassword()
